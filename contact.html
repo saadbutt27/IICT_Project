@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+
+</head>
+<body> 
+
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="./images/a_z.png" alt="A-Z Store Logo" width="300px">
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="account.html">SignUp/LogIn</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>                                  
+        </ul>
+        </nav>
+        </div>
+    </div>
+    <div class="mainDiv">
+       <div class="contact">
+           <div class="contact1">
+              <h2 class="contact1h2">Let's get in touch</h2> 
+              <p class="contact1p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  Impedit laborum neque iusto temporibus et quisquam laboriosam
+                   recusandae maiores molestiae voluptas non
+                   expedita, commodi nihil similique consequuntur velit. 
+                   Expedita, quasi qui?</p> <br><br>
+                   <ul class="contactul">
+                     <li><i class="bi bi-geo-alt"></i>&nbsp;&nbsp;Giga Mall, Sector F DHA Phase II, Islamabad</li><br>
+                     <li><i class="bi bi-envelope"></i>&nbsp;&nbsp;abc123@gmail.com</li><br>
+                     <li><i class="bi bi-telephone"></i>&nbsp;&nbsp;0332-4567800</li><br><br>
+                     <h2>Connect with us on</h2><br>
+                     <li id="li4"><i class="bi bi-facebook"></i>&nbsp;
+                      <i class="bi bi-twitter"></i>&nbsp;
+                      <i class="bi bi-instagram"></i>&nbsp;
+                      <i class="bi bi-linkedin"></i></li>
+                   </ul>
+           </div>
+           <div class="contact2">
+               <form name="myForm" onsubmit="message()">
+                   <h2 class="contact1h2">Get answer of your queries here</h2>
+                   <input type="text" class="contact2Btns" name="uname" id="user" placeholder="Name" required> <br>
+                   <input type="email" class="contact2Btns" name="mail" id="mail" placeholder="Email" required> <br>
+                   <input type="tel" class="contact2Btns" pattern="[0-9]{4}-[0-9]{7}" name="num" id="numb" placeholder="Phone no." required> <br>
+                   <textarea class="area" cols="40" rows="10" placeholder="Enter your queries here"></textarea> <br>
+                   <button type="submit" class="send">Send</button>
+               </form>
+        </div>
+       </div>
+    </div>
+
+    <div class="location">
+        <h2 class="contact1h2" style="padding-left: 200px;">Our Location</h2>
+        <p class="contact1p" style="padding-left: 200px;">You can reach us here</p> <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.236820995255!2d73.1555178150215!3d33.521227880753834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfed3fa003dd75%3A0xf9819210d468b564!2sA-Z%20Store!5e0!3m2!1sen!2s!4v1644434402345!5m2!1sen!2s" width="600" height="450" loading="lazy"></iframe>
+    </div>
+    
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                <img src="./images/store.jpg" alt="">
+              </div>
+            </div>
+            <div class="footer-col-2">
+             <img src="./images/footlogo.jpeg" alt="Logo" width="300px">
+             <p>Our Purpose Is To Sustainably Make the Pleasure and 
+               Benifits of Sports Accessible to the Many.
+             </p>
+           </div>
+           <div class="footer-col-3">
+             <h3>Useful Links</h3>
+             <ul>
+               <li>Coupons</li>
+               <li>Blog Post</li>
+               <li>Return Policy</li>
+               <li>Join Affiliate</li>
+             </ul>
+           </div>
+           <div class="footer-col-4">
+             <h3>Follow us </h3>
+             <ul>
+               <li>Facebook</li>
+               <li>Twitter</li>
+               <li>Instagram</li>
+               <li>Youtube</li>
+             </ul>
+           </div>
+          </div>
+          <hr>
+          <p class="copyright">copyright &#169; 2022 All Rights Reserved To Saad, Ayesha & Adina</p>
+        </div>
+      </div>
+
+      <script>
+          function message(){
+              alert("You'll get your queries answered soon");
+          }
+      </script>
+</body>
+</html>

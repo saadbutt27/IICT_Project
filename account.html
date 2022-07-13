@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <title>Bismillahhir rahmanir Raheem</title> -->
+    <title>Cart Shopping</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?
+  family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<body>
+    <!-- <h1>Ecommerce website</h1> -->
+
+
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+              <img src="./images/a_z.png" alt="A-Z Store Logo" width="300px">
+            </div>
+            <nav>
+              <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="account.html">SignUp/LogIn</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>                                  
+            </ul>
+            </nav>
+        </div>
+           </div>
+
+             <!-- account page -->
+
+             <div class="account-page">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-2">
+                             <img src="images/image1.png" width="100%">
+                         </div>
+                         <div class="col-2">
+                             <div class="form-container">
+                               <div class="form-btn" >
+                               <span onclick="Login()">Login</span>
+                               <span onclick="register()">Register</span>
+                               <hr id="Indicator">
+                               </div> 
+                               <form id="LoginForm">
+                                   <input type="text" placeholder="Username">
+                                   <input type="password" placeholder="Password">
+                                   <button type="submit" class="btn">Login</button>
+                                   <a href="">Forgot password</a>
+                               </form>
+                                <form name="regForm" id="RegForm" onsubmit="myRegForm()">
+                                  <input type="text" name="uname" placeholder="Username">
+                                  <input type="email" name="mail" placeholder="Email">
+                                  <input type="password" name="pass" placeholder="Password">
+                                  <input type="password" name="cPass" placeholder="Confirm Password">
+                                <button type="submit" class="btn">Register</button>
+                            </form>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+       
+             <!-- footer -->
+         <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                  <img src="./images/store.jpg" alt="">
+                </div>
+              </div>
+              <div class="footer-col-2">
+               <img src="./images/footlogo.jpeg" alt="Logo" width="300px">
+               <p>Our Purpose Is To Sustainably Make the Pleasure and 
+                 Benifits of Sports Accessible to the Many.
+               </p>
+             </div>
+             <div class="footer-col-3">
+               <h3>Useful Links</h3>
+               <ul>
+                 <li>Coupons</li>
+                 <li>Blog Post</li>
+                 <li>Return Policy</li>
+                 <li>Join Affiliate</li>
+               </ul>
+             </div>
+             <div class="footer-col-4">
+               <h3>Follow us </h3>
+               <ul>
+                 <li>Facebook</li>
+                 <li>Twitter</li>
+                 <li>Instagram</li>
+                 <li>Youtube</li>
+               </ul>
+             </div>
+            </div>
+            <hr>
+             <p class="copyright">copyright &#169; 2022 All Rights Reserved To Saad, Ayesha & Adina</p>
+          </div>
+        </div>
+   <!-- js for form -->
+   <script>
+       var LoginForm = document.getElementById("LoginForm");
+       var RegForm = document.getElementById("RegForm");
+       var Indicator = document.getElementById("Indicator");
+       function register(){
+           RegForm.style.transform = "translateX(0px)";
+           LoginForm.style.transform = "translateX(0px)";
+           Indicator.style.transform = "translateX(100px)";
+       
+       }
+       function Login(){
+           RegForm.style.transform = "translateX(300px)";
+           LoginForm.style.transform = "translateX(300px)";
+           Indicator.style.transform = "translateX(0px)";
+       }
+       function myRegForm(){
+         var password = document.regForm.pass.value;
+         var confirmPassword = document.regForm.cPass.value;
+         if(password != confirmPassword){
+           alert("Password doesn't match");
+         }
+       }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
